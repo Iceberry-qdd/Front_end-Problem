@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>让p变红</title>
+    <style type="text/css">
+        .div1 p {
+            color: red;
+        }
+
+        p.text1 {
+            color: red;
+        }
+
+        .text3,
+        .text4 {
+            color: red;
+        }
+
+        div>.text5 {
+            color: red;
+        }
+
+        ul li:first-child {
+            color: red;
+        }
+
+        ul li.last {
+            color: red;
+        }
+        h4+p{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!--后代选择器实现-->
+    <div class="div1">
+        <h3>后代选择器实现：</h3>
+        <div>
+            <p>请让我变红啊！！！</p>
+        </div>
+    </div>
+    <!--交集选择器实现-->
+    <div>
+        <h3>交集选择器实现：</h3>
+        <p class="text1">请让我变红啊！！！</p>
+        <p class="text2">请让我变红啊！！！</p>
+    </div>
+    <!--并集选择器实现-->
+    <div>
+        <h3>并集选择器实现：</h3>
+        <p class="text3">请让我变红啊！！！</p>
+        <p class="text4">请让我变红啊！！！</p>
+    </div>
+    <!--儿子选择器实现-->
+    <div>
+        <h3>儿子选择器实现：</h3>
+        <p class="text5">请让我变红啊！！！</p>
+    </div>
+    <!--序选择器实现-->
+    <div>
+        <h3>序选择器实现：</h3>
+        <ul>
+            <li>请让我变红啊！！！</li>
+            <li>请让我变红啊！！！</li>
+            <li class="last">请让我变红啊！！！</li>
+        </ul>
+    </div>
+    <!--下一个兄弟选择器实现-->
+    <div>
+        <h3>下一个兄弟选择器实现：</h3>
+        <h4>请让我变红啊！！！</h4>
+        <p>请让我变红啊！！！</p>
+        <p>请让我变红啊！！！</p>
+        <h4>请让我变红啊！！！</h4>
+        <p>请让我变红啊！！！</p>
+        <p>请让我变红啊！！！</p>
+    </div>
+</body>
+
+</html>

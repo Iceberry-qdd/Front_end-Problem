@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>想红不想红</title>
+    <style type="text/css">
+        .div1 .text1,
+        .text2 {
+            color: red;
+        }
+
+        .div2 p:nth-child(2),
+        .div2 p:nth-child(3) {
+            color: red;
+        }
+
+        .div3>p {
+            color: red;
+        }
+
+        .head1+p {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!--后代选择器+交集选择器+并集选择器-->
+    <div class="div1">
+        <h3>我想做老百姓</h3>
+        <div>
+            <p class="text1">我想红</p>
+            <p class="text2">我想红</p>
+            <p>我想做老百姓</p>
+        </div>
+        <p>我想做老百姓</p>
+        <p>我想做老百姓</p>
+    </div>
+    <!--序选择器+并集选择器-->
+    <div class="div2">
+        <h3 class="title1">我想做老百姓</h3>
+        <p>我想红</p>
+        <p>我想红</p>
+        <p>我想做老百姓</p>
+        <p>我想做老百姓</p>
+        <p>我想做老百姓</p>
+    </div>
+    <!--儿子选择器-->
+    <div>
+        <h3>我想做老百姓</h3>
+        <div class="div3">
+            <p>我想红</p>
+            <p>我想红</p>
+        </div>
+        <p>我想做老百姓</p>
+        <p>我想做老百姓</p>
+        <p>我想做老百姓</p>
+    </div>
+    <!--下一个兄弟选择器-->
+    <div>
+        <h3 class="head1">我想做老百姓</h3>
+        <p class="head1">我想红</p>
+        <p>我想红</p>
+        <p>我想做老百姓</p>
+        <p>我想做老百姓</p>
+        <p>我想做老百姓</p>
+    </div>
+</body>
+
+</html>
