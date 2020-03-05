@@ -4,13 +4,13 @@
 
 ​	盒子真实占有宽高：262*242
 
-​	![](image\1)
+​	![](https://i.loli.net/2020/03/05/cHFdQOXI2GPBAN4.jpg)
 
 ### Problem2
 
 ​	盒子真实占有宽高：302*272
 
-​	![](image\2)
+​	![](https://i.loli.net/2020/03/05/mnxgQOeMjyhE239.jpg)
 
 ### Problem3
 
